@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Accesorios Apple</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin-bottom: 1rem;
+        }
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .product h2 {
+            color: #000;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .product p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .product button {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #666;
+        }
+        .faq {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .faq h2 {
+            color: #000;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        details {
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            font-size: 1.2rem;
+            color: #000;
+        }
+        summary:hover {
+            color: #666;
+        }
+        details[open] summary ~ * {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Accesorios Apple</h1>
+    </header>
+    <nav>
+        <a href="#airpods2">AirPods Pro 2ª Gen</a>
+        <a href="#airpods3">AirPods Pro 3ª Gen</a>
+        <a href="#fundas">Fundas para iPhone</a>
+        <a href="#cargadores">Cargadores</a>
+        <a href="#cubos">Cubos de carga</a>
+        <a href="#inalambricos">Cargadores Inalámbricos</a>
+        <a href="#faq">Preguntas Frecuentes</a>
+    </nav>
+    <div class="container">
+        <div id="airpods2" class="product">
+            <img src="airpods2.jpg" alt="AirPods Pro 2ª Generación">
+            <h2>AirPods Pro 2ª Generación</h2>
+            <p>Disfruta de una experiencia de audio superior con los AirPods Pro de segunda generación.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="airpods3" class="product">
+            <img src="airpods3.jpg" alt="AirPods Pro 3ª Generación">
+            <h2>AirPods Pro 3ª Generación</h2>
+            <p>La última generación de AirPods Pro con cancelación de ruido activa y sonido envolvente.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="fundas" class="product">
+            <img src="fundas.jpg" alt="Fundas para iPhone">
+            <h2>Fundas para iPhone</h2>
+            <p>Protege tu iPhone con nuestras fundas disponibles desde el XS hasta el 15 Pro Max.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="cargadores" class="product">
+            <img src="cargadores.jpg" alt="Cargadores">
+            <h2>Cargadores</h2>
+            <p>Cargadores rápidos y eficientes para todos tus dispositivos Apple.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="cubos" class="product">
+            <img src="cubo.jpg" alt="Cubo de carga">
+            <h2>Cubo de carga</h2>
+            <p>El cubo de carga perfecto para tener siempre energía disponible.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="inalambricos" class="product">
+            <img src="inalambricos.jpg" alt="Cargadores Inalámbricos">
+            <h2>Cargadores Inalámbricos</h2>
+            <p>La comodidad de cargar tus dispositivos sin cables.</p>
+            <button onclick="window.location.href='https://www.instagram.com/yiiyistore?igsh=cjhlYmhxYjIwdTU3';">Comprar</button>
+        </div>
+        <div id="faq" class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Son los AirPods compatibles con todos los modelos de iPhone?</summary>
+                <p>Sí, los AirPods Pro de segunda y tercera generación son compatibles con todos los modelos de iPhone que tengan iOS 13.2 o posterior.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto tiempo dura la batería de los AirPods?</summary>
+                <p>Los AirPods Pro de segunda y tercera generación tienen una duración de batería de hasta 4.5 horas de escucha con una sola carga, y con el estuche de carga, puedes obtener más de 24 horas de escucha.</p>
+            </details>
+            <details>
+                <summary>¿Puedo usar los cargadores inalámbricos con cualquier funda de iPhone?</summary>
+                <p>La mayoría de las fundas delgadas y no metálicas permiten la carga inalámbrica. Sin embargo, las fundas gruesas o metálicas pueden interferir con la carga.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto tiempo tarda en cargar completamente un iPhone con el cargador inalámbrico?</summary>
+                <p>La carga completa de un iPhone con un cargador inalámbrico puede tardar entre 2 a 3 horas, dependiendo del modelo del iPhone y del cargador inalámbrico utilizado.</p>
+            </details>
+            <details>
+                <summary>¿Los cargadores son compatibles con todos los modelos de iPhone?</summary>
+                <p>Sí, nuestros cargadores son compatibles con todos los modelos de iPhone que tengan un puerto Lightning.</p>
+            </details>
+            <details>
+                <summary>¿El cubo de carga es de carga rápida?</summary>
+                <p>Sí, ofrecemos cubos de carga que son compatibles con la carga rápida, siempre y cuando se utilice con un cable de carga rápida compatible.</p>
+            </details>
+            <details>
+                <summary>¿Puedo usar el cubo de carga con otros dispositivos que no sean de Apple?</summary>
+                <p>Sí, el cubo de carga puede usarse con cualquier dispositivo que acepte carga a través de un puerto USB, aunque la velocidad de carga puede variar.</p>
+            </details>
+            <details>
+                <summary>¿Las fundas para iPhone protegen contra caídas?</summary>
+                <p>Sí, nuestras fundas están diseñadas para ofrecer protección contra caídas y golpes.</p>
+            </details>
+            <details>
+                <summary>¿Las fundas son compatibles con la carga inalámbrica?</summary>
+                <p>Sí, nuestras fundas están diseñadas para ser compatibles con la carga inalámbrica.</p>
+            </details>
+            <details>
+                <summary>¿Los AirPods vienen con algún tipo de garantía?</summary>
+                <p>Sí, los AirPods vienen con una garantía limitada de un año que cubre defectos de fabricación.</p>
+            </details>
+            <details>
+                <summary>¿Qué incluye la caja de los AirPods?</summary>
+                <p>La caja de los AirPods Pro de segunda y tercera generación incluye los AirPods, el estuche de carga inalámbrica, un cable de carga Lightning a USB-C y puntas de silicona de diferentes tamaños.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puedo limpiar mis AirPods de manera segura?</summary>
+                <p>Puedes limpiar tus AirPods con un paño suave y seco. Evita usar líquidos o productos de limpieza fuertes. Asegúrate de no introducir nada en las aberturas.</p>
+            </details>
+            <details>
+                <summary>¿Qué hago si mi cargador inalámbrico no funciona?</summary>
+                <p>Si tu cargador inalámbrico no funciona, primero verifica que esté correctamente conectado a una fuente de alimentación y que el iPhone esté correctamente alineado. Si el problema persiste, contacta con nuestro servicio de atención al cliente para obtener ayuda.</p>
+            </details>
+            <details>
+                <summary>¿Ofrecen algún tipo de descuento por la compra de varios productos?</summary>
+                <p>Consulta nuestro sitio web o contacta con nuestro servicio de atención al cliente para obtener información sobre descuentos y promociones actuales.</p>
+            </details>
+            <details>
+                <summary>¿Cuáles son las opciones de envío y cuánto tardan en llegar los productos?</summary>
+                <p>Ofrecemos varias opciones de envío, incluyendo envío estándar y exprés. El tiempo de entrega varía según la opción seleccionada y tu ubicación. Consulta nuestra página de envíos para más detalles.</p>
+            </details>
+        </div>
+    </div>
+</body>
+</html>
